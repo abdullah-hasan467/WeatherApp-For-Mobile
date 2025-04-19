@@ -139,15 +139,66 @@ export default function Index() {
           <Text className="text-white text-base"> Daily Forecast</Text>
           </View>
 <ScrollView horizontal
-contentContainerStyle={{paddingHorizontal:15}}
+contentContainerStyle={{paddingHorizontal:30}}
 showsHorizontalScrollIndicator={false}
 >
   <View className="flex justify-center items-center w-24 rounded-3xl py-3 space-y-2 mr-4 "style={{backgroundColor:theme.bgwhite(0.15)}}>
 <Image source={require('../assets/images/heavyrain.png')} className="h-11 w-11"/>
-<Text className="">
+<Text className="text-white">Monday</Text>
+<Text className="text-white text-xl font-semibold">  23&#176;
 
-</text>
+</Text>
   </View>
+
+  <View className="flex justify-center items-center w-24 rounded-3xl py-3 space-y-2 mr-4 "style={{backgroundColor:theme.bgwhite(0.15)}}>
+<Image source={require('../assets/images/heavyrain.png')} className="h-11 w-11"/>
+<Text className="text-white">Monday</Text>
+<Text className="text-white text-xl font-semibold">  23&#176;
+
+</Text>
+  </View>
+
+  <View className="flex justify-center items-center w-24 rounded-3xl py-3 space-y-2 mr-4 "style={{backgroundColor:theme.bgwhite(0.15)}}>
+<Image source={require('../assets/images/heavyrain.png')} className="h-11 w-11"/>
+<Text className="text-white">Monday</Text>
+<Text className="text-white text-xl font-semibold">  23&#176;
+
+</Text>
+  </View>
+
+  <View className="flex justify-center items-center w-24 rounded-3xl py-3 space-y-2 mr-4 "style={{backgroundColor:theme.bgwhite(0.15)}}>
+<Image source={require('../assets/images/heavyrain.png')} className="h-11 w-11"/>
+<Text className="text-white">Monday</Text>
+<Text className="text-white text-xl font-semibold">  23&#176;
+
+</Text>
+  </View>
+
+  <View className="flex justify-center items-center w-24 rounded-3xl py-3 space-y-2 mr-4 "style={{backgroundColor:theme.bgwhite(0.15)}}>
+<Image source={require('../assets/images/heavyrain.png')} className="h-11 w-11"/>
+<Text className="text-white">Monday</Text>
+<Text className="text-white text-xl font-semibold">  23&#176;
+
+</Text>
+  </View>
+
+  <View className="flex justify-center items-center w-24 rounded-3xl py-3 space-y-2 mr-4 "style={{backgroundColor:theme.bgwhite(0.15)}}>
+<Image source={require('../assets/images/heavyrain.png')} className="h-11 w-11"/>
+<Text className="text-white">Monday</Text>
+<Text className="text-white text-xl font-semibold">  23&#176;
+
+</Text>
+  </View>
+
+  <View className="flex justify-center items-center w-24 rounded-3xl py-3 space-y-2 mr-4 "style={{backgroundColor:theme.bgwhite(0.15)}}>
+<Image source={require('../assets/images/heavyrain.png')} className="h-11 w-11"/>
+<Text className="text-white">Monday</Text>
+<Text className="text-white text-xl font-semibold">  23&#176;
+
+</Text>
+  </View>
+
+  
 
 </ScrollView>
         </View>
