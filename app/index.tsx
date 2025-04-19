@@ -25,7 +25,9 @@ export default function Index() {
     console.log("Locations: ",{loc})
   }
   const handleSearch = value =>{
-    fetchLocations
+    fetchLocations({cityName:value}).then (data =>{
+      console.log("Get Location",data)
+    })
   }
   const handleTextDebounce = useCallback (debounce(handleSearch,1200),[])
   return (
