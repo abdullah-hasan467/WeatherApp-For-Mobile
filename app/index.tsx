@@ -1,6 +1,7 @@
 import Constants from "expo-constants";
 import { StatusBar } from "expo-status-bar";
-import { useState } from "react"; // For getting safe area padding on Android
+import { useCallback, useState } from "react"; 
+import {debounce} from 'lodash';// For getting safe area padding on Android
 import {
   Image,
   Platform,
@@ -11,16 +12,22 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import Feather from "react-native-vector-icons/Feather";
+import Feather from 'react-native-vector-icons/Feather';
 import { theme } from "./../theme/index";
 
 export default function Index() {
   const [showSearch, toggleSearch] = useState(false);
   const [locations, setLocation] = useState(["Dhaka", "Sherpur", "Mymensingh"]);
+  
+  
+
   const handleLocation = (loc:string) =>{
     console.log("Locations: ",{loc})
   }
-
+  const handleSearch = value =>{
+    fetchLocations
+  }
+  const handleTextDebounce = useCallback (debounce(handleSearch,1200),[])
   return (
     <View className="flex-1 relative bg-black">
       <StatusBar style="light" />
@@ -44,6 +51,7 @@ export default function Index() {
           >
             {showSearch ? (
               <TextInput
+              onChangeText={handleSearch}
                 placeholder="Search City"
                 placeholderTextColor="#fff"
                 className="pl-6 h-10 pb-2 flex-1 text-base text-white"
