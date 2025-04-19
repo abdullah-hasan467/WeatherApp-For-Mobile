@@ -133,8 +133,8 @@ export default function Index() {
 
 
 
-        <View className="mb-2 space-y-2">
-          <View className="flex-row items-center mx-5 space-x-2">
+        <View className="mb-2 space-y-2 ">
+          <View className="flex-row items-center mx-5 space-x-2 mb-7">
           <Feather name="calendar" size={30} color="white" />
           <Text className="text-white text-base"> Daily Forecast</Text>
           </View>
@@ -160,7 +160,15 @@ showsHorizontalScrollIndicator={false}
 
   <View className="flex justify-center items-center w-24 rounded-3xl py-3 space-y-2 mr-4 "style={{backgroundColor:theme.bgwhite(0.15)}}>
 <Image source={require('../assets/images/heavyrain.png')} className="h-11 w-11"/>
-<Text className="text-white">Monday</Text>
+<Text className="text-white">Tuesday</Text>
+<Text className="text-white text-xl font-semibold">  23&#176;
+
+</Text>
+  </View>
+
+  <View className="flex justify-center items-center w-24 rounded-3xl py-3 space-y-2 mr-4 "style={{backgroundColor:theme.bgwhite(0.15)}}>
+<Image source={require('../assets/images/heavyrain.png')} className="h-11 w-11"/>
+<Text className="text-white">Thurshday</Text>
 <Text className="text-white text-xl font-semibold">  23&#176;
 
 </Text>
@@ -190,15 +198,7 @@ showsHorizontalScrollIndicator={false}
 </Text>
   </View>
 
-  <View className="flex justify-center items-center w-24 rounded-3xl py-3 space-y-2 mr-4 "style={{backgroundColor:theme.bgwhite(0.15)}}>
-<Image source={require('../assets/images/heavyrain.png')} className="h-11 w-11"/>
-<Text className="text-white">Monday</Text>
-<Text className="text-white text-xl font-semibold">  23&#176;
 
-</Text>
-  </View>
-
-  
 
 </ScrollView>
         </View>
